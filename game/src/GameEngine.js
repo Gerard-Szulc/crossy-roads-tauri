@@ -199,7 +199,6 @@ export default class Engine {
           player_position_z: SaveInfo.SaveState.player_position_z,
           player_place: SaveInfo.SaveState.place,
         };
-        console.log(data)
         axios.post('http://localhost:3000/', data)
           .then((res) => {
             console.log(res.data);
